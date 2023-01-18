@@ -3,7 +3,7 @@
 
 ## [reference link ](https://www.acmicpc.net/step)
 
-- 백준 알고리즘 (언어: node.js)
+- 백준 알고리즘 (언어: Typescript)
 
 
  ## 프로젝트 세팅
