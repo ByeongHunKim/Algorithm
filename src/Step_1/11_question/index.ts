@@ -1,0 +1,20 @@
+import fs = require('fs')
+const inputFile = ('example.txt')
+let input = fs.readFileSync(inputFile).toString().split(' ')
+let A = parseInt(input[0])
+console.log("A", A)
+let B = input[1].split('')
+let C = parseInt(B[0])
+let D = parseInt(B[1])
+let E = parseInt(B[2])
+console.log("result: ", A * C,A * D,A * E)
+
+/*
+import fs = require('fs')
+let input = fs.readFileSync('/dev/stdin').toString().split(' ')
+let B = input[1].split('')
+let C = parseInt(B[0])
+let D = parseInt(B[1])
+let E = parseInt(B[2])
+console.log(parseInt(input[0]) * C, parseInt(input[0]) * D, parseInt(input[0]) * E)
+*/
