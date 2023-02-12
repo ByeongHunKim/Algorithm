@@ -1,13 +1,19 @@
 import fs = require('fs');
 const file = process.platform === 'linux' ? '/dev/stdin' : './example.txt';
-let input = fs.readFileSync(file).toString().split('\n');
+let inputFile = fs.readFileSync(file).toString().split('\n');
 
-input = input[0];
-input = input.split(' ').map(item => Number(item));
+console.log('1. inputFile : ', inputFile);
 
-solution(input[0], input[1]);
+let input = inputFile[0];
 
-function solution(H, M) {
+console.log('2. input : ', input);
+
+let inputResult = input.split(' ').map(item => Number(item));
+console.log('3. inputResult : ', inputResult);
+
+solution(inputResult[0], inputResult[1]);
+
+function solution(hour, M) {
   // 45분 일찍 알람 설정
   // M = M - 45;
   M -= 45;
@@ -18,12 +24,12 @@ function solution(H, M) {
 
     // M += 60;
     M = M + 60;
-    H--;
+    hour--;
 
-    // 만약 H가 -1 이라면, 그 전날인 23시로 변경
-    if (H === -1) {
-      H = 23;
+    // 만약 hour가 -1 이라면, 그 전날인 23시로 변경
+    if (hour === -1) {
+      hour = 23;
     }
   }
-  console.log(H + ' ' + M);
+  console.log(hour + ' ' + M);
 }
