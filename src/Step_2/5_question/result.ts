@@ -1,15 +1,15 @@
-import fs = require('fs');
-const file = process.platform === 'linux' ? '/dev/stdin' : './example.txt';
-let inputFile = fs.readFileSync(file).toString().split('\n');
+import fs = require("fs");
+const file = process.platform === "linux" ? "/dev/stdin" : "./example.txt";
+let inputFile = fs.readFileSync(file).toString().split("\n");
 
-console.log('1. inputFile : ', inputFile);
+console.log("1. inputFile : ", inputFile);
 
 let input = inputFile[0];
 
-console.log('2. input : ', input);
+console.log("2. input : ", input);
 
-let inputResult = input.split(' ').map(item => Number(item));
-console.log('3. inputResult : ', inputResult);
+let inputResult = input.split(" ").map((item) => Number(item));
+console.log("3. inputResult : ", inputResult);
 
 solution(inputResult[0], inputResult[1]);
 
@@ -31,5 +31,5 @@ function solution(hour, M) {
       hour = 23;
     }
   }
-  console.log(hour + ' ' + M);
+  console.log(hour + " " + M);
 }

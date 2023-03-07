@@ -1,22 +1,17 @@
 import fs = require('fs');
 const file = process.platform === 'linux' ? '/dev/stdin' : './example.txt';
-let inputFile = fs.readFileSync(file).toString().split(' ').map(Number);
+let inputFile = fs.readFileSync(file).toString().split('\n');
 
-// todo 1 : 입력된 값을 하나 씩 접근해둔다
-const [a, b, c] = [inputFile[0], inputFile[1], inputFile[2]];
+let [curHour, curMin] = inputFile[0].split(' ').map(Number);
+let cookTime = +inputFile[1];
 
-let biggest_num = 0;
-let result = 0;
+curMin += cookTime;
 
-console.log('1. numbers : ', a, b, c, inputFile);
+while (curMin >= 60) {
+  curMin -= 60;
+  curHour += 1;
+}
 
-const answer = (a, b, c): Number => {
-  // todo 2 : 입력된 값이 모두 같은 경우
-  if (a === b && a === c && b === c) {
-    result = 10000 + a * 1000;
-    return result;
-  }
-  // todo 3 : 입력된 값들이 서로 다른 경우 => 1000 + 3개의 수 중 가장 큰 수 * 100
-};
+curHour %= 24;
 
-console.log('주사위를 던진 결과는?', answer(a, b, c));
+console.log(curHour, curMin);
