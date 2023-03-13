@@ -12,6 +12,7 @@ console.log('1. numbers : ', a, b, c, inputFile);
 
 const answer = (a, b, c): Number => {
   // todo 2 : 입력된 값이 모두 같은 경우
+  console.log('abc값은?', a, b, c);
   if (a === b && a === c && b === c) {
     result = 10000 + a * 1000;
     return result;
