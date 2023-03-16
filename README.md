@@ -1,5 +1,5 @@
 # 알고리즘 공부
-- Last Updated. 2023/01/18
+- Last Updated. 2023/03/16
 
 ## [reference link ](https://www.acmicpc.net/step)
 
@@ -20,9 +20,8 @@ $ tsc --init
 // tsconfig.json, package.json 수정
 ```
 
-## 디버깅 하는 방법
+## 디버깅 하는 방법 - WebStorm IDE
 
-1. 폴더에서 `$ cp index.ts ../../` 로 파일을 복사
-2. `$ cd ../..` 로 디렉토리 이동
-3. `$ npm run dev` 로 작성한 코드 실행 후 결과 값 확인
-4. `rm index.ts` 로 파일 삭제
+1. `start debuging : ctrl + d / start file : ctrl + r`
+2. `make breakpoint`
+2. `step over : F8`
