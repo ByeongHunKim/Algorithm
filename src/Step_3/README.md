@@ -15,6 +15,13 @@ const inputfile = 'example.txt'
 const input = fs.readFileSync(inputfile);
 ```
 
+### 통합용
+```typescript
+const fs = require('fs');
+const file = process.platform === 'linux' ? '/dev/stdin' : './example.txt';
+let input = fs.readFileSync(file).toString().split('\n');
+```
+
 ### 문제 풀이
 - 1번 완료
 - 2번 완료
