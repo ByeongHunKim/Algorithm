@@ -28,3 +28,6 @@ let input = fs.readFileSync(file).toString().split('\n');
   - 문제를 잘 읽어야 했다. 첫번째 값이 count값을 의미했는데 무시해서 한번 틀렸다
 - 3번 완료
 - 4번 완료
+- 5번 완료
+- 6번 완료
+- 7번 완료
