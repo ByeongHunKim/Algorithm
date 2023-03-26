@@ -37,3 +37,4 @@ let input = fs.readFileSync(file).toString().split('\n');
 - 10번 완료
   - 이중포문 활용
 - 11번 완료
+- 12번 완료
