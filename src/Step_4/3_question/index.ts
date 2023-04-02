@@ -6,7 +6,7 @@ const count = Number(input[0]) - 1;
 const numList = input[1].split(' ');
 
 let minNum = Number(numList[0]);
-let maxNum = 0;
+let maxNum = Number(numList[0]);
 
 for(let i = 1; i <= count; i++){
     let compareNum = Number(numList[i]);
