@@ -15,3 +15,4 @@ let input = fs.readFileSync(file).toString().split('\n');
 - 2번 완료
 - 3번 완료 
 - 4번 완료
+- 5번 완료
