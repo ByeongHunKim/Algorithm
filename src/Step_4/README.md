@@ -19,3 +19,4 @@ let input = fs.readFileSync(file).toString().split('\n');
 - 6번 완료
 - 7번 완료
 - 8번 완료
+- 9번 완료
