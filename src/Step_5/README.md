@@ -13,3 +13,5 @@ let input = fs.readFileSync(file).toString().split('\n');
 - 1번 완료
 - 2번 완료
   - [trim()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/trim) 
+- 3번 완료
+  - [slice()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
