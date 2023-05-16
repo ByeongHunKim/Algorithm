@@ -11,3 +11,5 @@ let input = fs.readFileSync(file).toString().split('\n');
 
 ### 문제 풀이
 - 1번 완료
+- 2번 완료
+  - [trim()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/String/trim) 
