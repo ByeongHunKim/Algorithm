@@ -17,3 +17,4 @@ let input = fs.readFileSync(file).toString().split('\n');
   - [slice()](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/slice)
 - 4번 생략
 - 5번 완료
+- 7번 완료
