@@ -18,3 +18,10 @@ let input = fs.readFileSync(file).toString().split('\n');
 - 4번 생략
 - 5번 완료
 - 7번 완료
+- 8번 완료
+- 9번 완료
+- 11번 완료
+
+### 남은 문제 
+- [6번](https://www.acmicpc.net/problem/10809)
+- [10번](https://www.acmicpc.net/problem/5622)

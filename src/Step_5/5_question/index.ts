@@ -9,4 +9,4 @@ let result = 0;
 for(let i = 0; i < count; i++){
     result += Number(targetArray[i])
 }
-console.log('result',result)
+console.log(result)
